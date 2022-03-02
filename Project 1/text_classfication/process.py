@@ -1,5 +1,5 @@
 import read
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer
 
 def process():
     train_data = read.read_train_data()

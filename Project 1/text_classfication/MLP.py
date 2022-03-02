@@ -6,25 +6,26 @@ class MLP(nn.Module):
         self.hidden1 = nn.Sequential(
             nn.Linear(
                 in_features=29697,
-                out_features=10000,
+                out_features=1000,
                 bias=True,
             ),
-            nn.ReLU()
+            nn.Tanh()
         )
 
         self.hidden2 = nn.Sequential(
             nn.Linear(
-                in_features=10000,
+                in_features=1000,
                 out_features=100,
             ),
-            nn.ReLU()
+            nn.Tanh()
         )
 
         self.classification = nn.Sequential(
             nn.Linear(
                 in_features=100,
-                out_features=10),
-            nn.Sigmoid()
+                out_features=10
+            ),
+            nn.Tanh()
         )
 
     def forward(self, x):
