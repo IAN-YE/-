@@ -5,8 +5,8 @@ class MLP(nn.Module):
         super(MLP,self).__init__()
         self.hidden1 = nn.Sequential(
             nn.Linear(
-                in_features=29697,
-                out_features=1000,
+                in_features=5888,
+                out_features=500,
                 bias=True,
             ),
             nn.Tanh()
@@ -14,15 +14,15 @@ class MLP(nn.Module):
 
         self.hidden2 = nn.Sequential(
             nn.Linear(
-                in_features=1000,
-                out_features=100,
+                in_features=500,
+                out_features=50,
             ),
             nn.Tanh()
         )
 
         self.classification = nn.Sequential(
             nn.Linear(
-                in_features=100,
+                in_features=50,
                 out_features=10
             ),
             nn.Tanh()

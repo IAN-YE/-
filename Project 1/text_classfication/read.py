@@ -1,6 +1,7 @@
 import json
 from pandas import json_normalize
 
+
 def read_train_data():
     Data = []
     f = open('C:/Users/IAN/Desktop/当代人工智能/code/DaSE-Comtemporary-AI/Project 1/exp1data/train_data.txt', 'r', encoding='utf-8')
