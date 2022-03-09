@@ -64,12 +64,12 @@ for epoch in range(10):
     train_loss = 0
     test_accuracy = 0
     for step, (b_x, b_y) in enumerate(train_loader):
-        _, _, output = mlpt(b_x)
+        output = mlpt(b_x)
         train_loss = loss_func(output, b_y)
         optimizer.zero_grad()
         train_loss.backward()
         optimizer.step()
-        _, _, output = mlpt(X_test_t)
+        output = mlpt(X_test_t)
         _, pre_lab = torch.max(output, 1)
         print(pre_lab)
         test_accuracy = accuracy_score(y_test_t, pre_lab)
@@ -78,7 +78,7 @@ for epoch in range(10):
         tb.add_scalar('Accuracy', test_accuracy, step)
 
 
-_, _, y_pre = mlpt(X_to_test)
+y_pre = mlpt(X_to_test)
 _, pre_lab = torch.max(y_pre, 1)
 pre_lab = pre_lab.tolist()
 with open('res.txt', 'w') as f:
