@@ -4,7 +4,7 @@ from pandas import json_normalize
 
 def read_train_data():
     Data = []
-    f = open('C:/Users/IAN/Desktop/当代人工智能/code/DaSE-Comtemporary-AI/Project 1/exp1data/train_data.txt', 'r', encoding='utf-8')
+    f = open('../exp1data/train_data.txt', 'r', encoding='utf-8')
     for line in f.readlines():
         try:
             Data.append(json.loads(line.rstrip('\r\n')))
@@ -19,7 +19,7 @@ def read_train_data():
 
 def read_test_data():
     Test = []
-    f = open('C:/Users/IAN/Desktop/当代人工智能/code/DaSE-Comtemporary-AI/Project 1/exp1data/test.txt', 'r',
+    f = open('../exp1data/test.txt', 'r',
                 encoding='utf-8')
     for line in f.readlines():
         tmp = {}

@@ -9,8 +9,6 @@ import torch.nn as nn
 import numpy as np
 from torch.optim import SGD,Adam
 import seaborn as sns
-import hiddenlayer as hl
-import torchsummary
 from sklearn.metrics import accuracy_score
 
 #Checking GPU is used
@@ -69,11 +67,14 @@ for epoch in range(10):
         optimizer.zero_grad()
         train_loss.backward()
         optimizer.step()
+        train_output = mlpt(X_train_t)
+        _, pre_train = torch.max(train_output, 1)
         output = mlpt(X_test_t)
         _, pre_lab = torch.max(output, 1)
         print(pre_lab)
+        train_accuracy = accuracy_score(y_train_t,pre_train)
         test_accuracy = accuracy_score(y_test_t, pre_lab)
-        print("epoch:{},train_loss:{},test_accuracy:{}".format(epoch, train_loss, test_accuracy))
+        print("epoch:{},train_loss:{},train_accuracy{},test_accuracy:{}".format(epoch, train_loss, train_accuracy, test_accuracy))
         tb.add_scalar('Loss', train_loss, step)
         tb.add_scalar('Accuracy', test_accuracy, step)
 
