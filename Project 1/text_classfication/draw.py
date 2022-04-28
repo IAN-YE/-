@@ -6,7 +6,7 @@ MLP_relu = pd.read_csv(r'data/MLP1_RELU.csv')
 MLP_tanh = pd.read_csv(r'data/MLP1_tanh.csv')
 MLP_no = pd.read_csv(r'data/MLP_1_lr.csv')
 
-plt.rcParams['figure.figsize'] = (16.0, 7.0)
+plt.rcParams['figure.figsize'] = (10.0, 6.0)
 plt.style.use('seaborn-darkgrid')
 
 plt.plot(MLP_tanh['epoch'], MLP_tanh['train_accuracy'], label="tanh")
