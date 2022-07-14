@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94f3e999-5236-4709-8f95-d0616635a070" name="Changes" comment="" />
+    <list default="true" id="94f3e999-5236-4709-8f95-d0616635a070" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Project4/CodeBERT/bleu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project4/CodeBERT/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project4/CodeBERT/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project4/CodeT5/generate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project4/CodeT5/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project4/CodeT5/result" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project4/CodeT5/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/attention_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/picture_only/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/picture_only/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/picture_only/read_picture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/picture_only/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/text_only/bert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/text_only/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/text_only/read_txt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/text_only/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Project5/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project3/ResNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project3/ResNet.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="25jJwNUQgD7VjP7ukxGPdSnpGc3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../数据治理/Data-Governance/project1-crawler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

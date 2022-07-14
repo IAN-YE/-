@@ -76,5 +76,3 @@ class ResNet(nn.Module):
 
 
 
-
-
