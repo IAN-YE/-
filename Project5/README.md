@@ -1,6 +1,6 @@
 # DaSE-Comtemporary-AI-V
 
-Thisrepository is a contemporary artificial intelligence experiment five repository. This experiment is mainly a multimodal fusion experiment, and set up a corresponding baseline for the ablation experiment comparison process.
+This repository is a contemporary artificial intelligence experiment five repository. This experiment is mainly a multimodal fusion experiment, and set up a corresponding baseline for the ablation experiment comparison process.
 
 ## Requirements
 
